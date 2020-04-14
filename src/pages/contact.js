@@ -24,31 +24,28 @@ const ContactPage = ({ data: { site } }) => {
           </p>
         </div>
         <div>
-          <form
-            className="form-container"
-            action="mailto:sanjeevkumar201418@gmail.com"
-            method="GET"
-            target="_blank">
-            <div class="field">
+        <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+            <div>
               <label htmlFor="w3lName">Name</label>
-              <input
-                type="text"
-                name="subject"
-                id="w3lName"
-                placeholder="Enter your name"
-              />
+              <input type="text" name="w3lName" id="w3lName"/>
             </div>
-            <div class="field">
+            <div>
+              <label htmlFor="w3lSender">Email</label>
+              <input type="email" name="w3lSender" id="w3lSender"/>
+            </div>
+            <div>
+              <label htmlFor="w3lSubject">Subject</label>
+              <input type="text" name="w3lSubject" id="w3lSubject"/>
+            </div>
+            <div>
               <label htmlFor="w3lMessage">Message</label>
-              <textarea
-                name="body"
-                id="w3lMessage"
-                placeholder="Enter your message"></textarea>
+              <textarea name="w3lMessage" id="w3lMessage"></textarea>
             </div>
+
             <div>
               <label>
                 {" "}
-                Conenct on{" "}
+                Connect on{" "}
                 <a
                   href="https://www.linkedin.com/in/sanjeev-kumar-2a7b98147/"
                   target="_blank">
@@ -65,12 +62,8 @@ const ContactPage = ({ data: { site } }) => {
                 </a>
               </label>
             </div>
-            <div style={{ display: "flex", justifyContent: "flex-end" }}>
-              <input
-                type="submit"
-                className="button -primary"
-                style={{ marginRight: 0 }}
-              />
+            <div style={{display: "flex", justifyContent: "flex-end"}}>
+              <input type="submit" className="button -primary" style={{marginRight: 0}} />
             </div>
           </form>
         </div>

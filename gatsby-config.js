@@ -15,7 +15,7 @@ module.exports = {
       description: `I'm a Fullstack Web Developer, working in Red Hat, capable of building web applications in Java, NodeJs and Go. Also creating design and implementing them to create attractive UI`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify` 
+    w3l_dom_key: `5e962e8f976a0CF_Domain_verify` 
   },
   plugins: [
     {
