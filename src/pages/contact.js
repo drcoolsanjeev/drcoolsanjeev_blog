@@ -26,39 +26,48 @@ const ContactPage = ({ data: { site } }) => {
         <div>
           <form
             className="form-container"
-            action="https://sendmail.w3layouts.com/SubmitContactForm"
-            method="post">
-            <div>
+            action="mailto:sanjeevkumar201418@gmail.com"
+            method="GET"
+            target="_blank">
+            <div class="field">
               <label htmlFor="w3lName">Name</label>
               <input
-                disabled={true}
                 type="text"
-                name="w3lName"
+                name="subject"
                 id="w3lName"
-                value="Sanjeev Kumar"
+                placeholder="Enter your name"
               />
             </div>
-            <div>
-              <a href="https://www.linkedin.com/in/sanjeev-kumar-2a7b98147/">
-                <label htmlFor="w3lSender">LinkedIn</label>
-              </a>
-            </div>
-            <div>
-              <a href="https://github.com/drcoolsanjeev/">
-                <label htmlFor="w3lSender">Github Profile</label>
-              </a>
-            </div>
-            <div>
+            <div class="field">
               <label htmlFor="w3lMessage">Message</label>
               <textarea
-                disabled={true}
-                name="w3lMessage"
-                id="w3lMessage"></textarea>
+                name="body"
+                id="w3lMessage"
+                placeholder="Enter your message"></textarea>
+            </div>
+            <div>
+              <label>
+                {" "}
+                Conenct on{" "}
+                <a
+                  href="https://www.linkedin.com/in/sanjeev-kumar-2a7b98147/"
+                  target="_blank">
+                  LinkedIn
+                </a>
+              </label>
+            </div>
+            <div>
+              <label>
+                {" "}
+                Follow on{" "}
+                <a href="https://github.com/drcoolsanjeev/" target="_blank">
+                  Github
+                </a>
+              </label>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <input
                 type="submit"
-                disabled
                 className="button -primary"
                 style={{ marginRight: 0 }}
               />
